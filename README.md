@@ -1,27 +1,27 @@
 # password manager
 
 # Build environment
- Python 3.12.3
- pip install --upgrade pip
- pip install pyside6 cryptography
- pip install pyinstaller 
+    Python 3.12.3 \
+    pip install --upgrade pip \
+    pip install pyside6 cryptography \
+    pip install pyinstaller \
  
 # How to build
- python3 -m venv venv
- source venv/bin/activate
+    python3 -m venv venv \
+    source venv/bin/activate
  
- pyinstaller \
+    pyinstaller \
   --name PasswordManager \
   --windowed \
   --onefile \
-  run.py
+    run.py
  
-  deactivate
+    deactivate
   
 # How to run
-   ./dist/PasswordManager
-   python run.py
-   python -m app.main
+    ./dist/PasswordManager
+    python run.py
+    python -m app.main
 
 # Data location
     linux: ~/.password_manager/vault.dat
